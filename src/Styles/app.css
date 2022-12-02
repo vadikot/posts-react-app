@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3, h4 {
+    text-align: center;
+    background: pink;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+h4 {
+    width: 65%;
+    margin: 30px auto 0 auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+}
+
+.post-enter-active {
+    transform: translateX(0);
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    padding: 0 15px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar__link {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbar__username {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.page__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter__wrap {
+    display: flex;
+    margin: 0 10px;
+}
+
+.filter__wrap select {
+    margin-right: 10px;
+}
+
+.filter__wrap input {
+    margin: 0;
+}
+
+.post__form {
+    min-width: 300px;
+}
+
+.post__form,
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form .warning {
+    font-size: 14px;
+    margin-top: 5px;
+    color: deeppink;
+}
+
+.post__form input,
+.login__form input {
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+}
+
+.post__form button,
+.login__form button {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.comment {
+    margin: 15px 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.comment__title {
+    margin-bottom: 5px;
+}
+
+.comment__author {
+    margin: 10px 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.about__body {
+    max-width: 650px;
+    line-height: 20px;
+    margin: 0 15px;
+    font-family: sans-serif;
+}
+
+.about__body a {
+    color: #000000;
+}
+
+.about__author {
+    text-align: center;
+}
+
+.about__links a {
+    font-weight: bold;
+}
+
+.about__links a:first-child {
+    margin-right: 20px;
+}

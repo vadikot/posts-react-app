@@ -1,0 +1,13 @@
+.myBtn {
+    color: darkcyan;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #ffffff;
+    border: 1px solid darkcyan;
+    cursor: pointer;
+}
+
+.myBtn.current {
+    border: 2px solid orange;
+    font-weight: bold;
+}
